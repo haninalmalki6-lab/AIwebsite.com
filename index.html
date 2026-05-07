@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+
+    <title>الذكاء الاصطناعي</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1{
+            color: yellow;
+            font-size: 45px;
+        }
+
+        h2{
+            color: #444;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .box{
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        img{
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: darkblue;
+            font-size: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: dark blue;
+            cursor: pointer;
+        }
+
+        table{
+            margin: auto;
+            background-color: white;
+        }
+
+        @media screen and (max-width: 400px){
+
+            h1{
+                background-color: dark blue;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>الذكاء الاصطناعي</h1>
+
+    <div class="box">
+
+        <h2>ما هو الذكاء الاصطناعي؟</h2>
+
+        <p>
+            الذكاء الاصطناعي هو تقنية تساعد الأجهزة
+            على التفكير والتعلم وتنفيذ المهام بذكاء.
+        </p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>استخدامات الذكاء الاصطناعي</h2>
+
+        <ol>
+            <li>الروبوتات الذكية</li>
+            <li>التعليم الإلكتروني</li>
+            <li>السيارات الذاتية</li>
+            <li>التطبيقات الذكية</li>
+        </ol>
+
+    </div>
+
+    <div class="box">
+
+        <h2>مميزات الذكاء الاصطناعي</h2>
+
+        <ul>
+            <li>توفير الوقت</li>
+            <li>سهولة إنجاز المهام</li>
+            <li>التطور التقني</li>
+            <li>المساعدة في التعلم</li>
+        </ul>
+
+    </div>
+
+    <!-- صورة الذكاء الاصطناعي -->
+
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800"
+    width="400" height="250">
+
+    <br><br>
+
+    <button onclick="myFunction()">عمل الطالبة ملاك عبد الغني</button>
+
+    <p id="p_id"></p>
+
+    <br>
+
+    <table border="1">
+
+        <tr>
+            <th>الذكاء الاصطناعي</th>
+            <th>التقنية</th>
+        </tr>
+
+        <tr>
+            <td>AI</td>
+            <td>تطور حديث</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <a href="mailto:example@gmail.com">
+        تواصل معنا - malak33@gmail.com
+    </a>
+
+    <br><br>
+
+    <h2 id="greeting"></h2>
+
+    <script>
+
+        window.alert("مرحبا بزيارتك لموقع الذكاء الاصطناعي");
+
+        window.prompt("أهلاً بك في عالم الذكاء الاصطناعي", new Date());
+
+        function myFunction() {
+
+            document.getElementById("p_id").innerHTML = "ملاك عبد الغني";
+
+        }
+
+        let time = new Date().getHours();
+
+        if (time < 12) {
+
+            document.getElementById("greeting").innerHTML = "☀️ صباح الخير";
+
+        }
+
+        else if (time < 18) {
+
+            document.getElementById("greeting").innerHTML = "🌤 مساء الخير";
+
+        }
+
+        else {
+
+            document.getElementById("greeting").innerHTML = "🌙 مساء الخير";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
